@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Brief · CO Exposure · Elijah · 06.27.2026</title>
+<meta name="description" content="Clinical briefing for RX-O2 Hyperbaric Clinic consultation: CO exposure on 6/20/2026 with delayed cognitive symptoms.">
+
+<meta property="og:title" content="Patient Brief · CO Exposure">
+<meta property="og:description" content="Clinical briefing prepared for RX-O2 Hyperbaric Clinic consultation. Patient: Elijah. Exposure: 06.20.2026. Day 7.">
+<meta property="og:image" content="https://elijahcarimbocas.github.io/consult-brief/co-exposure-brief-og.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://elijahcarimbocas.github.io/consult-brief/co-exposure-brief.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Patient Brief · CO Exposure">
+<meta name="twitter:description" content="Clinical briefing for RX-O2 Hyperbaric Clinic consultation.">
+<meta name="twitter:image" content="https://elijahcarimbocas.github.io/consult-brief/co-exposure-brief-og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #F8F5EF;
+  --bg-paper: #FFFFFF;
+  --bg-warm: #F1EAD9;
+  --bg-cool: #EEF1F4;
+  --ink: #1A1F26;
+  --ink-soft: #4A5563;
+  --ink-mute: #7A8290;
+  --teal: #2E5C66;
+  --teal-soft: #4A7882;
+  --sienna: #B07A45;
+  --rose: #C77B6A;
+  --gold: #B89968;
+  --sage: #6F9F7D;
+  --border: #E5DDD0;
+  --border-strong: #C9BFAF;
+  --border-soft: rgba(26, 31, 38, 0.06);
+  --serif: 'Source Serif 4', Georgia, serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+@media (max-width: 600px) {
+  .container { padding: 2rem 1rem 3rem; }
+  body { font-size: 15px; }
+}
+
+/* HEADER */
+.brief-header {
+  border-top: 3px solid var(--teal);
+  padding-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.brief-header-left .doc-type {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.75rem;
+}
+
+.brief-header-left h1 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  font-variation-settings: "opsz" 60;
+}
+
+.brief-header-left h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--teal);
+}
+
+.brief-header-right {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  text-align: right;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+.brief-header-right strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* PATIENT BLOCK */
+.patient-block {
+  background: var(--bg-paper);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1.25rem 2rem;
+}
+
+.patient-block .field {
+  border-left: 2px solid var(--teal);
+  padding-left: 0.85rem;
+}
+
+.field-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.field-value {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.field-value.mono {
+  font-family: var(--mono);
+  font-weight: 500;
+}
+
+/* TLDR */
+.tldr {
+  background: var(--bg-warm);
+  border-radius: 6px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 3rem;
+  border-left: 3px solid var(--sienna);
+}
+
+.tldr-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--sienna);
+  margin-bottom: 0.75rem;
+}
+
+.tldr p {
+  font-size: 0.97rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.tldr p + p { margin-top: 0.75rem; }
+
+/* SECTIONS */
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-variation-settings: "opsz" 28;
+}
+
+h2 .num {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 1.5rem 0 0.65rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+p:last-child { margin-bottom: 0; }
+
+strong { font-weight: 600; color: var(--ink); }
+em { font-style: italic; color: var(--teal); }
+
+/* DATA TABLE / DEFINITION LIST */
+.data-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0.5rem 1.5rem;
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+@media (max-width: 540px) {
+  .data-grid { grid-template-columns: 1fr; gap: 0.25rem; }
+  .data-grid dt { padding-top: 0.5rem; }
+  .data-grid dd { padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-soft); }
+  .data-grid dd:last-child { border-bottom: none; }
+}
+
+.data-grid dt {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-mute);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 0.15rem;
+}
+
+.data-grid dd {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.data-grid dd.mono { font-family: var(--mono); font-size: 0.88rem; }
+.data-grid dd em { font-style: normal; color: var(--ink-mute); font-size: 0.85rem; display: block; margin-top: 0.15rem; }
+
+/* TIMELINE */
+.timeline {
+  background: var(--bg-paper);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.75rem 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.timeline-title {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 1.25rem;
+}
+
+.timeline-chart {
+  position: relative;
+  height: 150px;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-chart svg { width: 100%; height: 100%; }
+
+.timeline-axis {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 0 4px;
+}
+
+.timeline-axis .day {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 0.5rem;
+}
+
+.timeline-axis .day-name { font-weight: 600; color: var(--ink-soft); }
+.timeline-axis .day-date { font-size: 9px; color: var(--ink-mute); }
+
+.timeline-events {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-event {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1rem;
+  font-size: 0.88rem;
+  align-items: baseline;
+}
+
+.timeline-event .when {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+}
+
+.timeline-event .what { color: var(--ink); }
+
+.timeline-event .severity {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.severity-high { background: var(--rose); }
+.severity-med { background: var(--gold); }
+.severity-low { background: var(--sage); }
+
+/* CARDS */
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.card {
+  background: var(--bg-paper);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.25rem;
+}
+
+.card-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 0.5rem;
+}
+
+.card-value {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+  font-variation-settings: "opsz" 32;
+}
+
+.card-sub {
+  font-size: 0.82rem;
+  color: var(--ink-mute);
+  line-height: 1.4;
+}
+
+/* SYMPTOM TABLE */
+.symptom-table {
+  background: var(--bg-paper);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin: 1rem 0 1.5rem;
+  overflow: hidden;
+}
+
+.symptom-row {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--border-soft);
+  align-items: center;
+  font-size: 0.92rem;
+}
+
+.symptom-row:last-child { border-bottom: none; }
+
+.symptom-row.header {
+  background: var(--bg-warm);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.symptom-name { font-weight: 500; color: var(--ink); }
+
+.symptom-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.status-resolved { color: var(--sage); }
+.status-improving { color: var(--gold); }
+.status-persistent { color: var(--rose); }
+
+.symptom-status::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.symptom-detail {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+@media (max-width: 540px) {
+  .symptom-row { grid-template-columns: 1fr; gap: 0.35rem; padding: 1rem 1.25rem; }
+  .symptom-row.header { display: none; }
+  .symptom-row .symptom-name::before { content: 'Symptom: '; font-family: var(--mono); font-size: 9px; color: var(--ink-mute); letter-spacing: 0.1em; text-transform: uppercase; display: block; }
+  .symptom-row .symptom-status::after { content: ''; }
+  .symptom-row .symptom-detail::before { content: 'Notes: '; font-family: var(--mono); font-size: 9px; color: var(--ink-mute); letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 0.15rem; }
+}
+
+/* QUESTIONS */
+.qa-block {
+  background: var(--bg-cool);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 6px 6px 0;
+  padding: 1.5rem 1.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.qa-list {
+  list-style: none;
+  padding: 0;
+}
+
+.qa-list li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.qa-list li::before {
+  content: '?';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 16px;
+  height: 16px;
+  background: var(--teal);
+  color: var(--bg);
+  border-radius: 50%;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* GOALS */
+.goals-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.goals-list li {
+  padding: 0.85rem 0 0.85rem 2rem;
+  position: relative;
+  border-bottom: 1px solid var(--border-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.goals-list li:last-child { border-bottom: none; }
+
+.goals-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  font-family: var(--mono);
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.goals-list li strong { display: block; margin-bottom: 0.15rem; }
+.goals-list li .gloss { color: var(--ink-soft); font-size: 0.88rem; }
+
+/* FOOTER */
+footer {
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  letter-spacing: 0.05em;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* PRINT */
+@media print {
+  body { background: white; }
+  .container { padding: 1rem; max-width: 100%; }
+  section { page-break-inside: avoid; }
+  .timeline, .card, .symptom-table, .qa-block, .patient-block { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="brief-header">
+    <div class="brief-header-left">
+      <div class="doc-type">Patient Briefing · CO Exposure</div>
+      <h1>For the <em>RX-O2</em> consultation</h1>
+    </div>
+    <div class="brief-header-right">
+      <div><strong>Prepared</strong></div>
+      <div>06.27.2026</div>
+      <div style="margin-top: 0.5rem;"><strong>v1.0</strong></div>
+    </div>
+  </header>
+
+  <!-- PATIENT BLOCK -->
+  <div class="patient-block">
+    <div class="field">
+      <span class="field-label">Patient</span>
+      <span class="field-value">Elijah</span>
+    </div>
+    <div class="field">
+      <span class="field-label">Exposure date</span>
+      <span class="field-value mono">06.20.2026</span>
+    </div>
+    <div class="field">
+      <span class="field-label">Day post-exposure</span>
+      <span class="field-value mono">Day 7</span>
+    </div>
+    <div class="field">
+      <span class="field-label">Current status</span>
+      <span class="field-value">Recovering, mild persistent symptoms</span>
+    </div>
+  </div>
+
+  <!-- TLDR -->
+  <div class="tldr">
+    <div class="tldr-label">Reason for visit</div>
+    <p>Carbon monoxide and lead exposure on 6/20 from prolonged suppressed shooting at an indoor range. Acute symptoms (headache, brain fog, lightheadedness) peaked Saturday and largely resolved by Monday. New symptom emerged Wed 6/24: head heaviness, especially with breathing, that has persisted.</p>
+    <p>Tried mild HBOT (Vitaeris 320, 1.3 ATA) at a wellness clinic Friday 6/26 with a slight improvement in cognition and mental clarity. Seeking evaluation and medical-grade HBOT for delayed post-CO cognitive symptoms.</p>
+  </div>
+
+  <!-- 01: EXPOSURE EVENT -->
+  <section>
+    <h2><span class="num">01</span> The exposure event</h2>
+    <dl class="data-grid">
+      <dt>Date · time</dt>
+      <dd class="mono">Saturday, 06.20.2026</dd>
+
+      <dt>Setting</dt>
+      <dd>Indoor commercial shooting range, advertised "good ventilation" (direction unknown to patient)</dd>
+
+      <dt>Duration</dt>
+      <dd class="mono">~90 minutes continuous</dd>
+
+      <dt>Round count</dt>
+      <dd class="mono">100 to 120 rounds</dd>
+
+      <dt>Caliber</dt>
+      <dd class="mono">5.56 NATO (brass-cased, standard lead-styphnate primer)</dd>
+
+      <dt>Suppressor</dt>
+      <dd>OCL Polonium (full-size) <em>Sealed-core, non-flow-through design. Higher backpressure profile than flow-through cans.</em></dd>
+
+      <dt>Host rifle</dt>
+      <dd>Geissele Super Duty, 16" mid-length, fixed gas system (over-gassed for unsuppressed reliability), Super 42 H1 buffer + braided spring, Airborne charging handle</dd>
+
+      <dt>Concurrent exposures</dt>
+      <dd>Carbon monoxide, lead vapor and particulates (primer aerosol), nitrogen oxides, unburned propellant byproducts</dd>
+
+      <dt>Prior CO exposure history</dt>
+      <dd>None known. No smoker. No occupational CO risk.</dd>
+    </dl>
+  </section>
+
+  <!-- 02: TIMELINE -->
+  <section>
+    <h2><span class="num">02</span> Symptom timeline</h2>
+    <div class="timeline">
+      <div class="timeline-title">Daily severity since exposure</div>
+      <div class="timeline-chart">
+        <svg viewBox="0 0 700 150" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="curvefill" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#C77B6A" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#C77B6A" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Cognitive symptom curve (primary) -->
+          <path d="M 40 22 Q 100 35 150 60 Q 200 80 250 95 Q 300 108 350 115 Q 400 120 450 122 Q 500 124 550 122 Q 600 118 660 110" fill="none" stroke="#C77B6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 40 22 Q 100 35 150 60 Q 200 80 250 95 Q 300 108 350 115 Q 400 120 450 122 Q 500 124 550 122 Q 600 118 660 110 L 660 135 L 40 135 Z" fill="url(#curvefill)"/>
+
+          <!-- Head heaviness symptom (emerges Wed) -->
+          <path d="M 340 130 L 350 90 Q 400 88 450 88 Q 500 87 550 87 Q 600 85 660 80" fill="none" stroke="#B89968" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"/>
+
+          <!-- Data points cognitive -->
+          <circle cx="40" cy="22" r="5" fill="#C77B6A"/>
+          <circle cx="130" cy="50" r="4" fill="#C77B6A"/>
+          <circle cx="220" cy="80" r="4" fill="#C77B6A"/>
+          <circle cx="310" cy="105" r="4" fill="#C77B6A"/>
+          <circle cx="400" cy="118" r="4" fill="#C77B6A"/>
+          <circle cx="490" cy="122" r="4" fill="#C77B6A"/>
+          <circle cx="580" cy="118" r="4" fill="#C77B6A"/>
+          <circle cx="660" cy="110" r="6" fill="#6F9F7D" stroke="#FFFFFF" stroke-width="2.5"/>
+
+          <!-- Data points heaviness (emerge wed) -->
+          <circle cx="310" cy="115" r="3" fill="#B89968"/>
+          <circle cx="400" cy="90" r="4" fill="#B89968"/>
+          <circle cx="490" cy="88" r="4" fill="#B89968"/>
+          <circle cx="580" cy="86" r="4" fill="#B89968"/>
+          <circle cx="660" cy="82" r="5" fill="#B89968" stroke="#FFFFFF" stroke-width="2"/>
+
+          <!-- HBOT marker -->
+          <line x1="580" y1="5" x2="580" y2="135" stroke="#2E5C66" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.5"/>
+          <text x="585" y="14" font-family="JetBrains Mono, monospace" font-size="8" fill="#2E5C66">HBOT 1.3 ATA</text>
+        </svg>
+      </div>
+
+      <div class="timeline-axis">
+        <div class="day"><span class="day-name">Sat</span><span class="day-date">6/20</span></div>
+        <div class="day"><span class="day-name">Sun</span><span class="day-date">6/21</span></div>
+        <div class="day"><span class="day-name">Mon</span><span class="day-date">6/22</span></div>
+        <div class="day"><span class="day-name">Tue</span><span class="day-date">6/23</span></div>
+        <div class="day"><span class="day-name">Wed</span><span class="day-date">6/24</span></div>
+        <div class="day"><span class="day-name">Thu</span><span class="day-date">6/25</span></div>
+        <div class="day"><span class="day-name">Fri</span><span class="day-date">6/26</span></div>
+        <div class="day"><span class="day-name">Sat</span><span class="day-date">6/27</span></div>
+      </div>
+
+      <div class="timeline-events">
+        <div class="timeline-event">
+          <span class="when">6/20 Sat</span>
+          <span class="what"><span class="severity severity-high"></span>Acute exposure. Severe headache, lightheadedness, generalized brain fog within hours of leaving range.</span>
+        </div>
+        <div class="timeline-event">
+          <span class="when">6/21 Sun</span>
+          <span class="what"><span class="severity severity-med"></span>Significant improvement. Headache resolved. Light residual fog.</span>
+        </div>
+        <div class="timeline-event">
+          <span class="when">6/22 Mon</span>
+          <span class="what"><span class="severity severity-med"></span>~80% baseline. Low-grade cloudiness only.</span>
+        </div>
+        <div class="timeline-event">
+          <span class="when">6/24 Wed</span>
+          <span class="what"><span class="severity severity-med"></span>New symptom emerged: head heaviness, especially when breathing. Persisting since.</span>
+        </div>
+        <div class="timeline-event">
+          <span class="when">6/26 Fri</span>
+          <span class="what"><span class="severity severity-low"></span>Mild HBOT trial (Vitaeris 320, 1.3 ATA, 60 min). Slight cognitive improvement, head heaviness unchanged.</span>
+        </div>
+        <div class="timeline-event">
+          <span class="when">6/27 Sat</span>
+          <span class="what"><span class="severity severity-low"></span>Today. Cognitive clarity notably improved post-session. Head heaviness with breathing persists.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03: CURRENT SYMPTOMS -->
+  <section>
+    <h2><span class="num">03</span> Current symptom status</h2>
+    <div class="symptom-table">
+      <div class="symptom-row header">
+        <span>Symptom</span>
+        <span>Status</span>
+        <span>Notes</span>
+      </div>
+      <div class="symptom-row">
+        <span class="symptom-name">Headache</span>
+        <span class="symptom-status status-resolved">Resolved</span>
+        <span class="symptom-detail">Acute phase only (Sat). No recurrence.</span>
+      </div>
+      <div class="symptom-row">
+        <span class="symptom-name">Lightheadedness</span>
+        <span class="symptom-status status-resolved">Resolved</span>
+        <span class="symptom-detail">Resolved by Sunday.</span>
+      </div>
+      <div class="symptom-row">
+        <span class="symptom-name">Brain fog (general)</span>
+        <span class="symptom-status status-improving">Improving</span>
+        <span class="symptom-detail">~10-15% residual. Notable improvement after mild HBOT session.</span>
+      </div>
+      <div class="symptom-row">
+        <span class="symptom-name">Verbal / written articulation</span>
+        <span class="symptom-status status-improving">Improving</span>
+        <span class="symptom-detail">Substantially clearer today. Productive work day completed.</span>
+      </div>
+      <div class="symptom-row">
+        <span class="symptom-name">Head heaviness with breathing</span>
+        <span class="symptom-status status-persistent">Persistent</span>
+        <span class="symptom-detail">Emerged Wed 6/24 (Day 4). Not present in acute phase. Unchanged by mild HBOT.</span>
+      </div>
+      <div class="symptom-row">
+        <span class="symptom-name">Exercise tolerance</span>
+        <span class="symptom-status status-resolved">Intact</span>
+        <span class="symptom-detail">Completed Hyrox-style class (70% lifting / 30% HIIT) today without issue.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04: TREATMENT HISTORY -->
+  <section>
+    <h2><span class="num">04</span> Treatment history to date</h2>
+
+    <h3>Mild HBOT trial · Friday 6/26</h3>
+    <dl class="data-grid">
+      <dt>Facility</dt>
+      <dd>Buddha Bella Healing Center (Phoenix, wellness clinic)</dd>
+
+      <dt>Chamber</dt>
+      <dd class="mono">Vitaeris 320 (soft-shell)</dd>
+
+      <dt>Pressure</dt>
+      <dd class="mono">1.3 ATA</dd>
+
+      <dt>Oxygen</dt>
+      <dd>Filtered concentrator, ~95% O2</dd>
+
+      <dt>Duration</dt>
+      <dd class="mono">60 minutes at depth</dd>
+
+      <dt>Outcome</dt>
+      <dd>Slight improvement in mental clarity and articulation. Head heaviness symptom unchanged. Mild ear pressure during compression and decompression, equalized normally.</dd>
+    </dl>
+
+    <h3>Self-directed support measures</h3>
+    <p>Aggressive hydration (3L+/day). No alcohol since exposure. Sleep prioritized. NAC supplementation considered, not yet started. No medications.</p>
+  </section>
+
+  <!-- 05: ACTIVITY -->
+  <section>
+    <h2><span class="num">05</span> Physical activity tolerance</h2>
+    <div class="card-row">
+      <div class="card">
+        <div class="card-label">Frequency</div>
+        <div class="card-value">Every 48 hours</div>
+        <div class="card-sub">Established pattern, pre-exposure</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Typical session</div>
+        <div class="card-value">Weightlifting</div>
+        <div class="card-sub">~90% lifting / 10% HIIT mix typically</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Today's session</div>
+        <div class="card-value">Hyrox class</div>
+        <div class="card-sub">7am · ~70% lifting / 30% HIIT, completed without incident</div>
+      </div>
+    </div>
+    <p>Patient is well-conditioned and gains muscle readily. No exercise-induced exacerbation of head heaviness symptom observed. Cognitive clarity notably improved 5 hours post-workout, suggesting good cardiovascular and oxygenation response. Self-described as "naturally strong, won't push past limits."</p>
+  </section>
+
+  <!-- 06: LIFESTYLE -->
+  <section>
+    <h2><span class="num">06</span> Diet, supplements, caffeine</h2>
+    <dl class="data-grid">
+      <dt>Caffeine intake</dt>
+      <dd>1st Phorm sugar-free pre-workout (~16 oz, ~200mg caffeine) on training days only. Plus occasional coffee.</dd>
+
+      <dt>Alcohol</dt>
+      <dd>None since 6/20 exposure.</dd>
+
+      <dt>Diet</dt>
+      <dd>Generally consistent. Increased hydration since exposure.</dd>
+
+      <dt>Supplements</dt>
+      <dd>Standard pre/post-workout stack. No new supplements introduced since exposure.</dd>
+
+      <dt>Recent antibiotics</dt>
+      <dd>Patient mentions recent antibiotic course affecting stomach. May be relevant to current physiology.</dd>
+
+      <dt>Medications</dt>
+      <dd>None regular.</dd>
+    </dl>
+  </section>
+
+  <!-- 07: GOALS -->
+  <section>
+    <h2><span class="num">07</span> What the patient is asking for</h2>
+    <ul class="goals-list">
+      <li>
+        <strong>Clinical evaluation for delayed neurological sequelae (DNS) of CO exposure.</strong>
+        <span class="gloss">Wed 6/24 symptom emergence fits the early DNS window.</span>
+      </li>
+      <li>
+        <strong>Medical-grade HBOT protocol recommendation.</strong>
+        <span class="gloss">Pressure (2.0 to 2.4 ATA preferred), session count, frequency.</span>
+      </li>
+      <li>
+        <strong>Resolution of head heaviness with breathing.</strong>
+        <span class="gloss">Primary remaining symptom, unchanged by mild HBOT.</span>
+      </li>
+      <li>
+        <strong>Return to full cognitive baseline.</strong>
+        <span class="gloss">Already trending well, want to close the gap.</span>
+      </li>
+      <li>
+        <strong>Guidance on activity, caffeine, and pre/post-session protocols.</strong>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 08: QUESTIONS -->
+  <section>
+    <h2><span class="num">08</span> Specific questions</h2>
+    <div class="qa-block">
+      <ul class="qa-list">
+        <li>Is head heaviness with breathing a recognized post-CO symptom, and what's typically driving it?</li>
+        <li>What ATA pressure and protocol would you recommend for a Day 7 mild delayed presentation?</li>
+        <li>Realistic number of sessions to expect for full resolution?</li>
+        <li>Should baseline labs be drawn? (BLL, CBC, CMP have been suggested.)</li>
+        <li>Any exercise or caffeine restrictions during the treatment course?</li>
+        <li>Pre and post-session hydration / nutrition protocols you recommend?</li>
+        <li>What signs would indicate the treatment isn't working or that I need escalated workup?</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>Patient briefing · v1.0 · 06.27.2026</span>
+    <span>Prepared by patient</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
