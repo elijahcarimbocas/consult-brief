@@ -46,3 +46,6 @@ Typography: Source Serif 4 (display), Inter (body), JetBrains Mono (data labels 
 ## Version history
 
 - **v1.0** · 06.27.2026 · *co-exposure-brief* · Initial briefing for RX-O2 consultation
+- **v1.1** · 07.03.2026 · *co-exposure-brief* · Progress update after 5 medical-grade HBOT sessions
+- **v1.2** · 07.03.2026 · *co-exposure-brief* · Progress section moved to top, follow-up questions trimmed
+- **v1.3** · 07.09.2026 (evening) · *co-exposure-brief* · Updates consolidated into Section 09 (Update 1 = progress, Update 2 = clinician flags: sleep study request, focal head pressure, biotin lab interference, training cadence correction, mood course)
